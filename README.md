@@ -27,14 +27,12 @@ $mailer->registerPLugin(new ObserversPlugin([
     ]
 ]));
 
-
 $headers = $message->getHeaders();
 $headers->addTextHeader(ObserversPlugin::HEADER, 'event1');
 
 // Will add 'test@example.com' to bcc
 $mailer->send($message);
 ```
-
 
 License
 -------
