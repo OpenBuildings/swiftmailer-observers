@@ -4,6 +4,7 @@ namespace CL\Swiftmailer;
 
 use Swift_Events_SendListener;
 use Swift_Message;
+use Swift_Events_SendEvent;
 
 /**
  * @author    Ivan Kerin <ikerin@gmail.com>
@@ -49,7 +50,7 @@ class ObserversPlugin implements Swift_Events_SendListener
      *
      * @param Swift_Events_SendEvent $evt
      */
-    public function beforeSendPerformed(\Swift_Events_SendEvent $evt)
+    public function beforeSendPerformed(Swift_Events_SendEvent $evt)
     {
         $message = $evt->getMessage();
         $headers = $message->getHeaders();
@@ -64,7 +65,7 @@ class ObserversPlugin implements Swift_Events_SendListener
      *
      * @param Swift_Events_SendEvent $evt
      */
-    public function sendPerformed(\Swift_Events_SendEvent $evt)
+    public function sendPerformed(Swift_Events_SendEvent $evt)
     {
         // Do Nothing
     }

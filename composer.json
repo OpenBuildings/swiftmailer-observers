@@ -18,6 +18,10 @@
     "autoload": {
         "psr-4": {
             "CL\\Swiftmailer\\": "src/",
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
             "CL\\Swiftmailer\\Test\\": "tests/src/"
         }
     }
