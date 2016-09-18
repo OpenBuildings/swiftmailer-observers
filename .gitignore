@@ -1,2 +1,4 @@
 /vendor/
 /build/
+# Ignore local configuration
+/phpunit.xml
