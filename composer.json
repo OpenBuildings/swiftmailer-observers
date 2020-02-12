@@ -10,7 +10,7 @@
         }
     ],
     "require" : {
-        "php": ">=7",
+        "php": "^7.1",
         "swiftmailer/swiftmailer": "^5.0"
     },
     "require-dev" : {
@@ -24,6 +24,11 @@
     "autoload-dev": {
         "psr-4": {
             "CL\\Swiftmailer\\Test\\": "tests/src/"
+        }
+    },
+    "config": {
+        "platform": {
+            "php": "7.1.8"
         }
     }
 }

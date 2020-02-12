@@ -2,7 +2,7 @@
 
 namespace CL\Swiftmailer\Test;
 
-use PHPUnit_Framework_TestCase;
+use PHPUnit\Framework\TestCase;
 use Swift_Mailer;
 use Swift_Message;
 use Swift_NullTransport;
@@ -10,9 +10,9 @@ use Swift_Plugins_MessageLogger;
 use CL\Swiftmailer\ObserversPlugin;
 
 /**
- * @coversDefaultClass CL\Swiftmailer\ObserversPlugin
+ * @coversDefaultClass \CL\Swiftmailer\ObserversPlugin
  */
-class ObserversPluginTest extends PHPUnit_Framework_TestCase
+class ObserversPluginTest extends TestCase
 {
     /**
      * @covers ::beforeSendPerformed

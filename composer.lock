@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8249313508cc464bd657ba9cf6bc9439",
+    "content-hash": "ff38ed6dbd646a923f4126bd751d85f0",
     "packages": [
         {
             "name": "swiftmailer/swiftmailer",
@@ -1536,7 +1536,10 @@
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7"
+        "php": "^7.1"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "platform-overrides": {
+        "php": "7.1.8"
+    }
 }
